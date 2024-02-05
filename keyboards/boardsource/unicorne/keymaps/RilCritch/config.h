@@ -3,6 +3,7 @@
 #pragma once
 
 //= Unicorne Default = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =>
+
 #define RGB_MATRIX_LED_COUNT 54
 // #define RGB_MATRIX_DEFAULT_MODE RGB_MATRIX_ALPHAS_MODS
 #define RGB_DISABLE_WHEN_USB_SUSPENDED
@@ -25,13 +26,19 @@
 #define POINTING_DEVICE_INVERT_X
 
 //= Undefining = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =>
+
 /** RGB Matrix **/
 #undef RGB_MATRIX_DEFAULT_MODE
 
 
 //= Config Additions = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =>
+
 /** RGB Matrix Defaults **/
 #define RGB_MATRIX_DEFAULT_MODE RGB_MATRIX_SOLID_COLOR
 #define RGB_MATRIX_DEFAULT_HUE 0
 #define RGB_MATRIX_DEFAULT_SAT 0
 #define RGB_MATRIX_DEFAULT_ON false
+
+/** OLED Configuration **/
+#define OLED_TIMEOUT 30000 // Timeout 30000ms (30 sec) | Default = 60s
+#define OLED_BRIGHTNESS 200 // Brightness | Default = 255

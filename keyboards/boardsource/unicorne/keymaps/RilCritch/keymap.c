@@ -30,7 +30,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                     //`--------+--------+--------' `--------+--------+--------'
     ),
 
-	[_MOVE] = LAYOUT_split_3x6_3( // Navigation [3]
+	[_MOVE] = LAYOUT_split_3x6_3( // Movement / Navigation [3]
 //,-----------------------------------------------------.                   ,-----------------------------------------------------.
     QK_BOOT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_INS, KC_PAUS, KC_SCRL, KC_PSCR, XXXXXXX, XXXXXXX,
 //|--------+--------+--------+--------+--------+--------|                   |--------+--------+--------+--------+--------+--------|
@@ -50,7 +50,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //|--------+--------+--------+--------+--------+--------|                   |--------+--------+--------+--------+--------+--------|
     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_DOT,    KC_1,    KC_2,    KC_3, KC_SLSH, XXXXXXX,
 //`--------+--------+--------+--------+--------+--------+--------. ,--------+--------+--------+--------+--------+--------+--------'
-                                        XXXXXXX,  KC_SPC, XXXXXXX,    KC_ENT,    KC_0, KC_BSPC
+                                        XXXXXXX, KC_LALT, XXXXXXX,    KC_ENT,    KC_0, KC_BSPC
                                     //`--------+--------+--------' `--------+--------+--------'
     ),
 
